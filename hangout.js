@@ -18,8 +18,8 @@ var OAuth2Client = googleapis.OAuth2Client;
 
 var getHangoutLink = function (callback) {
 	var googleAuth = new GoogleClientLogin({
-		email: 'e@eliperelman.com',
-		password: 'appendToHangout',
+		email: '******************',
+		password: '*****************',
 		service: 'calendar',
 		accountType: GoogleClientLogin.accountTypes.hostedOrGoogle
 	});
@@ -35,7 +35,7 @@ var getHangoutLink = function (callback) {
 
 			var now = moment().format();
 
-			client.withApiKey('AIzaSyD3shHHW4YautPlu_N2KKo6Zoe9LqyE7ww');
+			client.withApiKey('***************************');
 
 			client
 				.calendar
@@ -58,7 +58,7 @@ var getHangoutLink = function (callback) {
 							dateTime: now
 						},
 						attendees: [{
-							email: 'e@eliperelman.com'
+							email: '*******************'
 						}]
 					}
 				})
